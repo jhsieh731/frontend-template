@@ -1,4 +1,4 @@
-import gql from 'graphql-tag'
+import { gql } from '@apollo/client'
 
 // Modify this query as the backend api requires
 export const VIEWER = gql`

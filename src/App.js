@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { ApolloProvider } from '@apollo/react-hooks'
+import { ApolloProvider } from '@apollo/client'
 import { Router } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { persistCache } from 'apollo-cache-persist'
@@ -10,7 +10,6 @@ import history from './history'
 
 import GlobalContext from './utils/globalContext'
 import AppRouter from './routes/AppRouter'
-
 
 const App = () => {
   const [apolloClient, setApolloClient] = useState(undefined)

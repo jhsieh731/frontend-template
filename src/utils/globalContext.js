@@ -1,13 +1,11 @@
 import React, {
   useReducer, createContext, useContext, useMemo,
 } from 'react'
-import { useQuery } from '@apollo/react-hooks'
+import { useQuery } from '@apollo/client'
 import { useHistory } from 'react-router-dom'
-
 import { VIEWER } from './graphql'
 import client from '../client'
 import { ROUTE_PATHS } from './constants'
-
 
 const Context = createContext()
 export const useGlobalContext = () => useContext(Context)

@@ -1,15 +1,13 @@
-import { ApolloClient } from 'apollo-client'
-import { InMemoryCache } from 'apollo-cache-inmemory'
-import { HttpLink } from 'apollo-link-http'
-import { onError } from 'apollo-link-error'
-import { ApolloLink } from 'apollo-link'
+import {
+  InMemoryCache, ApolloClient, HttpLink, ApolloLink,
+} from '@apollo/client'
+import { onError } from '@apollo/client/link/error'
 import config from './config'
 
 const httpLink = new HttpLink({
   uri: config.graphqlUrl,
   credentials: 'include',
 })
-
 
 const afterwareLink = new ApolloLink((operation, forward) => forward(operation)
   .map(response => {
