@@ -1,11 +1,4 @@
-![](https://github.com/hsadev/web-template/workflows/Linter/badge.svg)
-# DEV React-Apollo Starter
-
-This is a repository with starter code for new frontend web projects at DEV.
-
-**NOTE: When starting a project, update the title and provide a description here for the project. You should also put any engineering-specific information here that you think might be important for future engineers to know (quirks of an API, for example).**
-
-To start a new project built off of this repository, click the green "Use this Template" button.
+# SoundBite Web App Frontend
 
 ### Running the project
 
@@ -14,18 +7,14 @@ $ npm i
 $ npm run start
 ```
 
-## Contributing to this project
-
-Please use the workflow and git conventions outlined [here](https://docs.google.com/document/d/1MJUp3kGXOG2ck8phtELk1Ph2AcBFZDMpM9j8dJTCeIw/edit?usp=sharing) when making contributions to this project. The guidelines are designed to increase the long term efficacy of the our engineering efforts, meaning the effort that goes into following these standards today will help save the engineers of tomorrow a considerable amount of time.
-
 ## Project Layout
 
 ### Project Structure
 
-This repository contains by the general frontend web file structure conventions we use at DEV. It has react-router, apollo integration, and styled-components. It also has a full developer environment with prettier, eslint, and travis set up. The repository was designed first and foremost to scale to large projects. It should be easy to extend the base file structure and setup here to much larger projects.
+This repository has react-router, apollo integration, and styled-components. It also has a full developer environment with prettier, eslint, and travis set up. 
 
 ```
-project-repo-name
+soundbite
 └───.github
 |
 └───.storybook
@@ -109,16 +98,3 @@ project-repo-name
 
   - The top level components folder is used to store components that will be used throughout the app. If a component is used in more than one container, then it should be in this folder.
 
-## Storybook
-
-Storybook is a tool that allows you to work on and view individual components without having to build an entire page to do so. This becomes very useful as the project grows larger and you are required to navigate 2 or 3 levels deep to even get to the page your component is on (especially when you're restyling minute details like font-size or widths).
-
-#### Running Storybook
-
-In order to use story book you can simply run the following command
-
-```bash
-$ npm run storybook
-```
-
-This will launch a storybook window in your default browser on localhost:9009. If you would like to view storybook in a different browser, you can simply open that browser and go to localhost:9009.
