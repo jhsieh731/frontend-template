@@ -1,4 +1,4 @@
-# SoundBite Web App Frontend
+# React Web App Frontend Template
 
 ### Running the project
 
@@ -11,11 +11,13 @@ $ npm run start
 
 ### Project Structure
 
-This repository has react-router, apollo integration, and styled-components. It also has a full developer environment with prettier, eslint, and travis set up. 
+This repository has react-router, apollo integration, and styled-components. It also has a full developer environment with prettier and eslint set up. 
 
 ```
 soundbite
 └───.github
+|
+└───.husky
 |
 └───.storybook
 |
